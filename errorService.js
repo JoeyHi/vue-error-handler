@@ -2,7 +2,7 @@ const ERROR_SESSION_KEY = 'ERROR_SESSION_KEY__'
 
 const getSession = () => {
     try {
-        return JSON.parse(window.sessionStorage.getItem(ERROR_SESSION_KEY));
+        return JSON.parse(window.sessionStorage.getItem(ERROR_SESSION_KEY)) ?? [];
     } catch (e) {
         return [];
     }

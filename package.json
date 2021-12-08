@@ -1,6 +1,6 @@
 {
-    "name": "vue-error-handler",
-    "version": "1.0.0-beta",
+    "name": "@janzho/vue-error-handler",
+    "version": "1.0.0-beta1",
     "main": "index.js",
     "repository": "git@github.com:/JoeyHi/vue-error-handler.git",
     "author": "Joey <94593940@qq.com>",
@@ -20,6 +20,8 @@
     "devDependencies": {
         "commitizen": "^4.2.4",
         "cz-conventional-changelog": "^3.3.0",
+        "inquirer": "^8.2.0",
+        "semver": "^7.3.5",
         "standard-version": "^9.3.2"
     }
 }
