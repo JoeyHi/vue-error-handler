@@ -16,9 +16,9 @@ export const addErrorLogInfo = (info) => {
     const errors = getSession();
     const errorList = [item, ...errors];
 
-    if (errorList.some(info => {
+    if (errors.some(info => {
         const { url, message, type, detail } = info;
-        let isSameRequest = false;
+        let isSameRequest = true;
         if (type === 'http' && item.type === 'http') {
             isSameRequest = detail === item.detail;
         }

@@ -7,7 +7,6 @@ remark
 
 ##----------node----------
 /node_modules
-/script
 
 ##----------system----------
 .DS_Stor

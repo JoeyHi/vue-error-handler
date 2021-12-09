@@ -1,4 +1,3 @@
-import { isDevMode } from '../utils/dev';
 import { addErrorLogInfo } from '../errorService';
 
 
@@ -12,7 +11,7 @@ export const scriptErrorHandler = (
     if (event === 'Script error.' && !source) {
         return false;
     }
-    if (isDevMode()) console.error(error);
+    console.error(error);
     const errorInfo = {};
     colno = colno || (window.event && window.event.errorCharacter) || 0;
     errorInfo.message = event;

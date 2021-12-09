@@ -1,5 +1,4 @@
 import { isString } from '../utils/is';
-import { isDevMode } from '../utils/dev';
 import { addErrorLogInfo } from '../errorService';
 import { processStackMessage } from '../utils';
 
@@ -28,9 +27,7 @@ function formatComponentName(vm) {
 export function vueErrorHandler(err, vm, info) {
     if (isString(err)) return;
     const { name, path } = formatComponentName(vm);
-    if (isDevMode()) {
-        console.error(err);
-    }
+    console.error(err);
     addErrorLogInfo({
         type: 'vue',
         name,
