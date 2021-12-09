@@ -1,6 +1,6 @@
 {
     "name": "@janzho/vue-error-handler",
-    "version": "1.0.0-beta1",
+    "version": "1.0.0-beta2",
     "main": "index.js",
     "repository": "git@github.com:/JoeyHi/vue-error-handler.git",
     "author": "Joey <94593940@qq.com>",

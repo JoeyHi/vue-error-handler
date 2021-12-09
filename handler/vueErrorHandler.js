@@ -10,9 +10,7 @@ function formatComponentName(vm) {
             path: 'root'
         }
     }
-    const options = vm.$options
-    as
-    any;
+    const options = vm.$options;
     if (!options) {
         return {
             name: 'anonymous',
