@@ -1,12 +1,15 @@
 {
     "name": "vue-error-recorder",
-    "version": "1.0.0-beta.1",
-    "main": "index.js",
+    "version": "1.0.0",
+    "main": "./index.js",
     "repository": "git@github.com:/JoeyHi/vue-error-handler.git",
     "author": "Joey <94593940@qq.com>",
     "license": "MIT",
     "scripts": {
         "commit": "git-cz"
+    },
+    "exports": {
+        "import": "./index.js"
     },
     "publishConfig": {
         "access": "public"
